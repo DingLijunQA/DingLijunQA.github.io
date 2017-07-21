@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.91cute.com">
-  <title>Archives: 2017 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没办法，就要萌">
-<meta property="og:type" content="website">
+  <meta name="description" content="#在Mac上安装Pycharm＋Selenium ##一、安装Mac开发者工具  安装Xcode［从APP中安装］ 安装Command Line Tools: xcode-select —install  ##二、安装Pycharm  从官网下载软件：https://www.jetbrains.com/pycharm/download/ 破解：注册时选择License server，填入http:">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://www.91cute.com/archives/2017/index.html">
+<meta property="og:url" content="http://www.91cute.com/2017/07/21/在Mac上安装Pycharm＋Selenium/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="没办法，就要萌">
+<meta property="og:description" content="#在Mac上安装Pycharm＋Selenium ##一、安装Mac开发者工具  安装Xcode［从APP中安装］ 安装Command Line Tools: xcode-select —install  ##二、安装Pycharm  从官网下载软件：https://www.jetbrains.com/pycharm/download/ 破解：注册时选择License server，填入http:">
+<meta property="og:updated_time" content="2017-07-21T09:43:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="没办法，就要萌">
+<meta name="twitter:description" content="#在Mac上安装Pycharm＋Selenium ##一、安装Mac开发者工具  安装Xcode［从APP中安装］ 安装Command Line Tools: xcode-select —install  ##二、安装Pycharm  从官网下载软件：https://www.jetbrains.com/pycharm/download/ 破解：注册时选择License server，填入http:">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -148,43 +149,129 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-在Mac上安装Pycharm＋Selenium" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
       
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/21/在Mac上安装Pycharm＋Selenium/" class="archive-article-date">
-  	<time datetime="2017-07-21T09:43:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-21</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        <p>#在Mac上安装Pycharm＋Selenium</p>
+<p>##一、安装Mac开发者工具</p>
+<ul>
+<li>安装Xcode［从APP中安装］</li>
+<li>安装Command Line Tools: <code>xcode-select —install</code></li>
+</ul>
+<p>##二、安装Pycharm</p>
+<ul>
+<li>从官网下载软件：<a href="https://www.jetbrains.com/pycharm/download/" target="_blank" rel="external">https://www.jetbrains.com/pycharm/download/</a></li>
+<li>破解：注册时选择License server，填入<a href="http://idea.lanyus.com" target="_blank" rel="external">http://idea.lanyus.com</a></li>
+</ul>
+<ul>
+<li>在terminal输入：python，查看python版。<br>我的Mac默认的python版本为2.7</li>
+<li>输入：<code>brew search python</code>  查看python的所有版本。homebrew使用命令行来安装软件的工具</li>
+</ul>
+<ul>
+<li>输入：<code>brew install python3</code> 安装python3</li>
+<li>安装pip，输入：<code>sudo easy_install pip</code>。 python3.5版本以上都自带pip</li>
+<li>安装selenium，输入：｀sudo pip install –U selenium｀</li>
+</ul>
+<p>##三、开始python之旅啦<br>踩坑纪录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">百度了一下,是因为Firefox高版本需要使用geckodriver来驱动，</div><div class="line">执行：brew install geckodriver</div><div class="line">装完geckodriver继续输入命令，还是不行＝＝；</div><div class="line"></div><div class="line">继续百度，发现是我的Mac的操作系统问题</div><div class="line">“OS X EI Captian引入了Rootless机制，即使root用户也没有执行权限”，</div><div class="line">进入recovery mode，关闭SIP，装完记得开启。操作方式如下</div><div class="line">https://jingyan.baidu.com/article/e5c39bf5d13bf939d76033cf.html</div></pre></td></tr></table></figure>
 
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.91cute.com/2017/07/21/在Mac上安装Pycharm＋Selenium/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
 
 
           </div>
@@ -207,8 +294,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
